@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 col-sm-3 col-lg-2 bg-dark p-0 d-none d-md-block">
+                <div class="sidebar vh-100">
+                    <div class="p-2 border-bottom border-secondary-subtle align-items-center">
+                        <a class="nav-brand p-1 ms-2" href="index.html">
+                            <img src="/assets/img/logo.png" alt="logo">
+                            <span class="d-none d-sm-inline ms-2">Promage</span>
+                        </a>
+                    </div>
+
+                    <!-- Sidebar Menu -->
+                    <nav class="nav flex-column p-2 align-content-around d-inline">
+                        <a class="nav-link d-flex text-white align-items-center ms-3 me-3" href="index.html"><i
+                                class="bi bi-grid"></i>
+                            <span class="ms-2">Dashboard</span></a>
+                        <a class="nav-link d-flex text-white align-items-center ms-3 me-3" href="user.html"><i
+                                class="bi bi-person"></i>
+                            <span class=" ms-2">User </span></a>
+                        <a class="nav-link d-flex text-white align-items-center ms-3 me-3" href="product.html"><i class="bi bi-box-seam"></i>
+                            <span class="ms-2">Product </span></a>
+                        <a class="nav-link d-flex text-white align-items-center ms-3 me-3" href="logout.html"><i
+                                class="bi bi-box-arrow-left"></i>
+                            <span class=" ms-2">LogOut</span></a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Top Nav -->
+            <div class="col col-md-9 col-lg-10 p-0 main-content">
+                <nav class="navbar border-bottom border-secondary-subtle">
+                    <div class="container d-flex align-items-center justify-content-between">
+                        <!-- hanburger button -->
+                        <button class="btn btn-outline-secondary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
+                            <i class="bi bi-list fs-3"></i>
+                        </button>
+
+                        <!-- Nav Search-->
+                        <form class="search-form d-flex" role="search">
+                            <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn search-btn" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+
+                        <!-- Profile dropdown -->
+                        <div class="dropdown">
+                            <a class="btn p-0" href="#" role="button" id="profileDropdown">
+                                <img src="/assets/img/user.jpg" alt="user" class="rounded-circle" style="width: 38px; height: 38px;">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Main Content -->
+                <main>
+                    <div class="container">
+                        <div class="row g-2 my-2">
+                            <h4 class="px-2">Dashboard</h4>
+                            <!-- Total Sale -->
+                            <div class="col-md-3">
+                                <div class="card h-100 p-4">
+                                    <div class="card-icon bg-c1"><i class="bi bi-bar-chart-line-fill"></i></div>
+                                    <p class="text-muted mb-1">This Week's Revenue</p>
+                                    <h3>৳ 53,989</h3>
+                                    <span class="text-success fw-semibold"><i class="bi bi-arrow-up-right"></i>12%
+                    </span>
+                                </div>
+                            </div>
+                            <!-- Low Stock Alert -->
+                            <div class="col-md-3">
+                                <div class="card h-100 p-4">
+                                    <div class="card-icon bg-c2 text-warning"><i class="bi bi-box-seam"></i></div>
+                                    <p class="text-muted mb-1">Low Stock Items</p>
+                                    <h3>45</h3>
+                                    <span class="text-danger fw-semibold"><i class="bi bi-arrow-down-right"></i>
+                        7%</span>
+                                </div>
+                            </div>
+                            <!-- Pending Orders -->
+                            <div class="col-md-3">
+                                <div class="card h-100 p-4">
+                                    <div class="card-icon bg-c3 text-danger"><i class="bi bi-clock-history"></i></div>
+                                    <p class="text-muted  mb-1">Pending Orders</p>
+                                    <h3>32</h3>
+                                    <span class="text-warning fw-semibold"><i class="bi bi-arrow-clockwise"></i>
+                        4%</span>
+                                </div>
+                            </div>
+                            <!-- Total Orders -->
+                            <div class="col-md-3">
+                                <div class="card h-100 p-4">
+                                    <div class="card-icon bg-c4 text-info"><i class="bi bi-basket3-fill"></i></div>
+                                    <p class="text-muted  mb-1">Total Orders</p>
+                                    <h3>1,256</h3>
+                                    <span class="text-primary fw-semibold"><i class="bi bi-arrow-up"></i>
+                        9%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-3 mt-1">
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="chart h-100 p-4">
+                                    <h5>Monthly Sales</h5>
+                                    <canvas id="monthlySalesChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-5 ">
+                                <div class="chart p-4">
+                                    <h5 class="text-center p-2 mb-4">Order Status</h5>
+                                    <canvas id="orderStatusChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- table -->
+                    <div class="container-table">
+                        <div class="row p-3">
+                            <div class="col-12">
+                                <h5 class="p-2 ">Recent Orders</h5>
+                                <table class="table table-hover align-middle">
+                                    <thead class="border-bottom border-secondary-subtle fw-bold">
+                                        <tr>
+                                            <th>Order ID</th>
+                                            <th>Customer ID</th>
+                                            <th>Customer Name</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#101</td>
+                                            <td>C-302</td>
+                                            <td>Tokito Muichiro</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn-table btn-sm btn-primary" type="badge">
+                                        Delivered
+                                    </button>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#102</td>
+                                            <td>C-502</td>
+                                            <td>Fahima Akter</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn-table btn-sm btn-secondary" type="badge">
+                                        Pending
+                                    </button>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#108</td>
+                                            <td>C-409</td>
+                                            <td>Suity Rahman</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn-table btn-sm btn-danger" type="badge">
+                                        Cancelled
+                                    </button>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#111</td>
+                                            <td>C-709</td>
+                                            <td>Naruto Hassan</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn-table btn-sm btn-success" type="badge">
+                                        Shipped
+                                    </button>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+            </div>
+        </div>
+
+
+        <!-- OffCanvas part -->
+        <div class="offcanvas offcanvas-start" id="offcanvasSidebar">
+            <div class="offcanvas-header">
+                <a class="nav-brand ms-1 d-flex align-items-center text-white" href="#">
+                    <img src="/assets/img/logo.png" style="width: 30px; height: 30px;">
+                    <span class="ms-2 fs-5 fw-bold text-black">Promage</span>
+                </a>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body p-0">
+                <!-- Sidebar content -->
+                <nav class="nav flex-column bg-dark text-white vh-100 p-3">
+                    <a class="nav-link text-white align-items-center" href="#"><i class="bi bi-grid"></i>
+                        <span class="ms-2">Dashboard</span></a>
+                    <a class="nav-link text-white" href="#"><i class="bi bi-person"></i>
+                        <span class="ms-2">User</span></a>
+                    <a class="nav-link text-white" href="#"><i class="bi bi-box-seam"></i>
+                        <span class="ms-2">Product</span></a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- JS script -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="/js/chart1.js"></script>
+        <script src="/js/chart2.js"></script>
+</body>
+
+</html>

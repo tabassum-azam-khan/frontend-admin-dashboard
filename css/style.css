@@ -1,0 +1,295 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #EBDFD7;
+    overflow-x: hidden;
+}
+
+
+/* Nav logo */
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    color: #EBDFD7;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-brand span {
+    font-weight: 800;
+}
+
+.nav {
+    height: 100vh;
+}
+
+
+/* Sidebar*/
+
+.sidebar .nav-link,
+.offcanvas .nav-link {
+    border-radius: 50px;
+    padding: 12px;
+}
+
+.sidebar .nav-link:hover,
+.offcanvas .nav-link:hover {
+    color: #E65F2B !important;
+    background: #F2EAE5;
+}
+
+
+/* Navbar Search */
+
+.navbar {
+    padding: 9.5px;
+}
+
+.navbar form.search-form {
+    max-width: 300px;
+}
+
+.search-input {
+    border-radius: 50px 50px 50px 50px;
+    padding: 6px 16px;
+    background-color: #ffffff8a;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 8px #E65F2B;
+}
+
+.search-btn {
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+    background-color: #E65F2B;
+    box-shadow: 0 0 8px #E65F2B;
+    outline: none;
+}
+
+
+/* Dropdown */
+
+.dropdown-menu {
+    background-color: #F2EAE5;
+}
+
+.dropdown-item:hover {
+    background-color: #E65F2B;
+    color: #F2EAE5;
+}
+
+
+/* User profile button */
+
+.dropdown .btn {
+    border-radius: 50%;
+}
+
+.dropdown .btn:active {
+    box-shadow: 0 0 10px #E65F2B;
+}
+
+
+/* Card */
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 2px 8px #1817170d;
+    border: none;
+    background-color: #F2EAE5;
+}
+
+.card:hover {
+    border: #E65F2B;
+    box-shadow: 0 0 10px #E65F2B;
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    color: #FFFFFF !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card h3 {
+    margin-bottom: 3px;
+    color: #060606;
+    font-weight: 500;
+}
+
+.bg-c1 {
+    background-color: #D398E7;
+}
+
+.bg-c2 {
+    background-color: #9e7362;
+}
+
+.bg-c3 {
+    background-color: #70A1E5;
+}
+
+.bg-c4 {
+    background-color: #F0C274;
+}
+
+
+/* Chart */
+
+.chart {
+    background-color: #F2EAE5;
+    border-radius: 10px;
+}
+
+
+/* Table */
+
+.table {
+    background-color: transparent !important;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.table th,
+.table td {
+    background-color: #F2EAE5 !important;
+    padding: 12px 5px;
+    text-align: center;
+    color: #333;
+}
+
+.table-hover tbody tr:hover td {
+    background-color: #E2D7D1 !important;
+}
+
+
+/* Table status Button */
+
+.btn-table {
+    border-radius: 30px;
+    padding: 6px 20px;
+    width: 120px;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.btn-primary.btn-table {
+    background-color: #0d6efd;
+}
+
+.btn-danger.btn-table {
+    background-color: #dc3545;
+}
+
+.btn-success.btn-table {
+    background-color: #198754;
+}
+
+.btn-secondary.btn-table {
+    background-color: #f7c737;
+}
+
+
+/***** Add Button *****/
+
+.add-btn {
+    background-color: #E65F2B;
+    color: #F2EAE5;
+    border-radius: 30px;
+    padding: 6px 20px;
+    border: none;
+}
+
+.add-btn:hover {
+    background-color: #F2EAE5;
+    color: #E65F2B;
+}
+
+
+/***** Login Page *****/
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/assets/img/login.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.login-page .login-card {
+    background: #EBDFD7;
+    padding: 40px;
+    border-radius: 16px;
+    font-size: 40px;
+    width: 100%;
+}
+
+.login-page .form-control {
+    background-color: #F2EAE5;
+    border: none;
+    border-radius: 30px;
+    color: #121212;
+    padding: 16px;
+}
+
+.login-page .form-control:focus {
+    box-shadow: 0 0 5px #e65f2b;
+}
+
+.login-page .btn-login {
+    background-color: #121212;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 16px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.login-page .btn-login:hover {
+    background-color: #e65f2b;
+    color: #121212;
+}
+
+.login-page .login-footer {
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-page .login-footer a {
+    text-decoration: none;
+    color: #e65f2b;
+}
+
+.login-page .login-footer a:hover {
+    color: #121212;
+}
